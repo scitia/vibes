@@ -1,0 +1,7 @@
+cells:
+  - kind: 2
+    value: SELECT count(*) from ORDERDETAILS;
+    languageId: oracle-sql
+  - kind: 2
+    value: SELECT count(*) from ORDERS;
+    languageId: oracle-sql
