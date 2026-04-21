@@ -7,7 +7,7 @@ services:
     environment:
       - ORACLE_PWD=topsecret
     volumes:
-      - c:/Users/kacper.lizewski/.docker/customVolumes/ora-student-db:/opt/oracle/oradata
+      - oracle-data:/opt/oracle/oradata
     restart: unless-stopped
 
 volumes:
