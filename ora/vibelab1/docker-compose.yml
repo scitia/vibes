@@ -1,15 +1,13 @@
-version: '3.8'
-
 services:
   oracle-db:
     image: container-registry.oracle.com/database/free:latest
     container_name: student-ora-db
     ports:
-      - "1524:1521"
+      - "1521:1521"
     environment:
       - ORACLE_PWD=topsecret
     volumes:
-      - d:/docker/volumes/student-db:/opt/oracle/oradata
+      - oracle-data:/opt/oracle/oradata
     restart: unless-stopped
 
 volumes:
